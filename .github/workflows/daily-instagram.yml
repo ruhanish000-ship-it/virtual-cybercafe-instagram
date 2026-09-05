@@ -1,0 +1,88 @@
+name: Daily Virtual Cyber Cafe Reel
+
+on:
+  schedule:
+    # 14:00 UTC = 7:30 PM India Standard Time
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: virtual-cybercafe-instagram
+  cancel-in-progress: false
+
+jobs:
+  create-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      PUBLISH_MODE: ${{ vars.PUBLISH_MODE || 'dry-run' }}
+      META_API_VERSION: ${{ vars.META_API_VERSION || 'v26.0' }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      TOKEN_ENCRYPTION_KEY: ${{ secrets.TOKEN_ENCRYPTION_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash-lite' }}
+      PUBLISH_STATIC_POST: ${{ vars.PUBLISH_STATIC_POST || 'true' }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Check out automation
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install free media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-core
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Create today's Reel, hook and matching post
+        run: python -m virtual_cybercafe.main prepare
+
+      - name: Keep a one-day dry-run preview
+        if: env.PUBLISH_MODE != 'live'
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-dry-run-preview
+          path: |
+            output/reel.mp4
+            output/cover.jpg
+            output/static-post.jpg
+            output/caption.txt
+            output/static-caption.txt
+          retention-days: 1
+
+      - name: Host Reel and post temporarily on public media branch
+        if: env.PUBLISH_MODE == 'live'
+        id: host
+        run: bash scripts/publish_media_branch.sh output/reel.mp4 output/static-post.jpg
+
+      - name: Publish Reel and optional feed post on Instagram
+        if: env.PUBLISH_MODE == 'live'
+        run: |
+          publish_args=(--video-url "${{ steps.host.outputs.video_url }}")
+          if [[ "$PUBLISH_STATIC_POST" == "true" ]]; then
+            publish_args+=(--image-url "${{ steps.host.outputs.image_url }}")
+          fi
+          python -m virtual_cybercafe.main publish "${publish_args[@]}"
+
+      - name: Save rotation, notices and refreshed encrypted token
+        if: always() && env.PUBLISH_MODE == 'live'
+        run: |
+          git config user.name "Virtual Cyber Cafe Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/content_state.json state/token_meta.json state/instagram_token.enc
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Instagram automation state [skip ci]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
