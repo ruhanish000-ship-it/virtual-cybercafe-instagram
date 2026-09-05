@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "virtual-cybercafe-instagram"
+version = "1.1.1"
+description = "Free Instagram Reel automation for Virtual Cyber Cafe"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4==4.13.4",
+  "cryptography==45.0.6",
+  "numpy==2.2.6",
+  "Pillow==11.3.0",
+  "PyYAML==6.0.2",
+  "requests==2.32.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
