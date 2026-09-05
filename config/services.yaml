@@ -1,0 +1,364 @@
+services:
+  - category: Aadhaar
+    title: Aadhaar Download & Update Help
+    hook: Need your Aadhaar work done correctly?
+    bullets: [Aadhaar PDF download, Print & PVC guidance, Appointment and address-update assistance]
+    documents: [Aadhaar-linked mobile where required, Valid address proof for update, Active mobile number]
+    hashtags: [AadhaarCard, AadhaarUpdate, DelhiCyberCafe]
+
+  - category: PAN Card
+    title: PAN Card Application Help
+    hook: New PAN, correction or reprint?
+    bullets: [New PAN application, Name/DOB/address correction, Lost PAN reprint assistance]
+    documents: [Identity proof, Address proof, Date-of-birth proof]
+    hashtags: [PANCard, PANCorrection, OnlineServices]
+
+  - category: Voter ID
+    title: Voter ID Services
+    hook: Election ID work pending?
+    bullets: [New voter registration, Correction and address change, Voter ID download assistance]
+    documents: [Age proof, Address proof, Passport-size photo]
+    hashtags: [VoterID, VoterRegistration, DelhiServices]
+
+  - category: Passport
+    title: Passport Form & Appointment Help
+    hook: Passport application feels confusing?
+    bullets: [New passport application, Renewal form assistance, Appointment booking guidance]
+    documents: [Identity and address proof, Existing passport for renewal, Supporting documents as applicable]
+    hashtags: [PassportIndia, PassportRenewal, AppointmentBooking]
+
+  - category: Civil Records
+    title: Birth & Death Certificate Help
+    hook: Need a municipal certificate online?
+    bullets: [Birth certificate application, Death certificate application, MCD download and correction guidance]
+    documents: [Event details, Hospital/cremation record where applicable, Applicant identity proof]
+    hashtags: [BirthCertificate, DeathCertificate, MCDDelhi]
+
+  - category: Delhi Certificates
+    title: Delhi Domicile / Residence Certificate
+    hook: Delhi residence certificate application help
+    bullets: [Online form filling, Document checklist, Application tracking guidance]
+    documents: [Delhi address proof, Identity proof, Self-declaration/supporting record]
+    hashtags: [DelhiDomicile, ResidenceCertificate, EDistrictDelhi]
+
+  - category: Delhi Certificates
+    title: Income Certificate Assistance
+    hook: Applying for an income certificate?
+    bullets: [Delhi e-District application, Document upload support, Status and download guidance]
+    documents: [Income evidence, Identity proof, Delhi address proof]
+    hashtags: [IncomeCertificate, EDistrictDelhi, DelhiCyberCafe]
+
+  - category: Delhi Certificates
+    title: EWS Certificate Assistance
+    hook: EWS certificate form support available
+    bullets: [Application form filling, Document scan and upload, Status tracking assistance]
+    documents: [Income/asset documents, Identity proof, Residence documents]
+    hashtags: [EWSCertificate, DelhiEDistrict, CertificateServices]
+
+  - category: Delhi Certificates
+    title: OBC / SC / ST Certificate Help
+    hook: Category certificate application support
+    bullets: [New application guidance, Document checklist, Online submission assistance]
+    documents: [Identity/address proof, Family/category records where applicable, Required declarations]
+    hashtags: [OBCCertificate, SCCertificate, STCertificate]
+
+  - category: Police Services
+    title: Character Certificate & PCC Help
+    hook: Police verification form assistance
+    bullets: [Character certificate guidance, Police Clearance Certificate form, Document upload assistance]
+    documents: [Identity proof, Address proof, Purpose-related documents]
+    hashtags: [CharacterCertificate, PoliceClearance, DelhiPolice]
+
+  - category: Police Services
+    title: Delhi Police Lost Report
+    hook: Lost a document or valuable item?
+    bullets: [Online lost report assistance, Details and document entry, Report download and print]
+    documents: [Item/document details, Date and place of loss, Applicant mobile number]
+    hashtags: [LostReport, DelhiPolice, DocumentHelp]
+
+  - category: Ration Card
+    title: Ration Card Services
+    hook: Ration card change or new request?
+    bullets: [New application guidance, Correction assistance, Member addition or deletion]
+    documents: [Family identity proofs, Address proof, Relationship/supporting records]
+    hashtags: [RationCard, DelhiRationCard, FamilyDocuments]
+
+  - category: Pension
+    title: Social Pension Form Assistance
+    hook: Pension scheme application support
+    bullets: [Widow pension forms, Old-age pension forms, Disability pension forms]
+    documents: [Identity/address proof, Bank details, Eligibility documents]
+    hashtags: [PensionScheme, WidowPension, OldAgePension]
+
+  - category: Government Schemes
+    title: PM-Kisan & Scheme Registration
+    hook: Check and apply for eligible schemes
+    bullets: [PM-Kisan assistance, Ayushman Bharat guidance, Other government scheme registrations]
+    documents: [Identity proof, Bank/land records when applicable, Eligibility documents]
+    hashtags: [PMKisan, AyushmanBharat, GovernmentSchemes]
+
+  - category: Worker Services
+    title: E-Shram Card Registration
+    hook: E-Shram registration or update?
+    bullets: [New registration, Profile update assistance, Card download and print]
+    documents: [Aadhaar, Aadhaar-linked mobile, Bank details]
+    hashtags: [EShram, EShramCard, WorkerServices]
+
+  - category: Worker Services
+    title: Labour Card Services
+    hook: Labour card form help available
+    bullets: [New registration, Renewal assistance, Document scan and upload]
+    documents: [Identity/address proof, Work-related documents, Bank/mobile details]
+    hashtags: [LabourCard, LabourRegistration, DelhiWorkers]
+
+  - category: Driving Licence
+    title: Learner's Licence Application
+    hook: Start your driving licence process
+    bullets: [Learner's Licence form, Document upload help, Test/appointment guidance]
+    documents: [Age proof, Address proof, Photograph/signature as required]
+    hashtags: [LearnerLicence, DrivingLicence, Parivahan]
+
+  - category: Driving Licence
+    title: Permanent DL Services
+    hook: Permanent driving licence assistance
+    bullets: [Permanent DL application, Appointment guidance, Application tracking]
+    documents: [Valid learner licence, Identity/address proof, Application details]
+    hashtags: [DrivingLicence, PermanentDL, Sarathi]
+
+  - category: Driving Licence
+    title: DL Renewal, Correction & Duplicate
+    hook: Expired, incorrect or lost driving licence?
+    bullets: [DL renewal, Name/address correction, Duplicate driving licence application]
+    documents: [Existing DL details, Identity/address proof, Supporting change/loss record]
+    hashtags: [DLRenewal, DuplicateDL, DrivingLicenceCorrection]
+
+  - category: Vehicle RC
+    title: Vehicle RC Download & Duplicate
+    hook: RC download or duplicate RC assistance
+    bullets: [e-RC download and print, Duplicate RC application, Application tracking]
+    documents: [Registration number, Owner details, Supporting loss/damage records]
+    hashtags: [VehicleRC, DuplicateRC, MParivahan]
+
+  - category: Vehicle RC
+    title: RC Ownership Transfer
+    hook: Buying or selling a vehicle?
+    bullets: [Ownership transfer form assistance, Document checklist, Parivahan submission guidance]
+    documents: [RC and insurance, Buyer/seller KYC, Transfer forms/supporting documents]
+    hashtags: [RCTransfer, VehicleTransfer, Parivahan]
+
+  - category: Vehicle RC
+    title: Address Change in RC
+    hook: Moved to a new address?
+    bullets: [RC address-change application, Document upload, Status tracking]
+    documents: [Existing RC, New address proof, Owner identity proof]
+    hashtags: [RCAddressChange, VehicleRC, ParivahanServices]
+
+  - category: Vehicle Services
+    title: Vehicle NOC Assistance
+    hook: Taking your vehicle to another state?
+    bullets: [NOC application guidance, Document checklist, Status follow-up]
+    documents: [RC, Insurance and PUC, Owner identity/address proof]
+    hashtags: [VehicleNOC, RTONOC, Parivahan]
+
+  - category: Commercial Vehicle
+    title: Permit & Fitness Assistance
+    hook: Commercial vehicle paperwork support
+    bullets: [Permit application guidance, Fitness-related assistance, Online fee/form support]
+    documents: [Vehicle RC, Insurance and PUC, Permit/fitness records]
+    hashtags: [VehiclePermit, FitnessCertificate, CommercialVehicle]
+
+  - category: Vehicle Services
+    title: FASTag, Insurance & PUC Help
+    hook: Keep your vehicle documents up to date
+    bullets: [FASTag assistance, Insurance renewal support, PUC information]
+    documents: [Vehicle RC, Owner contact details, Existing policy/tag details]
+    hashtags: [FASTag, VehicleInsurance, PUC]
+
+  - category: Traffic Challan
+    title: Traffic Challan Check & Payment
+    hook: Check pending e-challans online
+    bullets: [Challan status check, Online payment assistance, Receipt download and print]
+    documents: [Vehicle or challan number, Owner details where required, Payment method]
+    hashtags: [TrafficChallan, EChallan, DelhiTrafficPolice]
+
+  - category: Transport Portals
+    title: Parivahan & mParivahan Help
+    hook: Vehicle portal issue or download problem?
+    bullets: [Parivahan form assistance, mParivahan guidance, Application/status support]
+    documents: [Vehicle/DL details, Registered mobile if required, Related application number]
+    hashtags: [Parivahan, MParivahan, RTOService]
+
+  - category: Delhi e-Governance
+    title: Delhi e-District Forms
+    hook: Delhi certificate and scheme forms in one place
+    bullets: [Online application assistance, Scan/upload support, Status and certificate download]
+    documents: [Identity proof, Delhi address proof, Service-specific documents]
+    hashtags: [DelhiEDistrict, OnlineForms, DelhiServices]
+
+  - category: MCD Services
+    title: MCD Online Services
+    hook: Municipal work made simpler
+    bullets: [Birth/death certificate support, Property tax payment assistance, Receipt download]
+    documents: [Property/event details, Identity proof, Previous record if available]
+    hashtags: [MCDDelhi, PropertyTax, MunicipalServices]
+
+  - category: Utility Bills
+    title: Water & Electricity Bill Help
+    hook: Pay utility bills and download receipts
+    bullets: [Delhi Jal Board payment, BSES bill payment, Tata Power bill payment]
+    documents: [Consumer/account number, Bill details, Payment method]
+    hashtags: [BillPayment, BSES, DelhiJalBoard]
+
+  - category: Utility Connections
+    title: New Water / Electricity Connection
+    hook: New connection application assistance
+    bullets: [Online form support, Document upload, Status tracking guidance]
+    documents: [Identity/address proof, Ownership/occupancy record, Service-specific documents]
+    hashtags: [NewConnection, ElectricityConnection, WaterConnection]
+
+  - category: Delhi Services
+    title: DDA, Transport & Revenue Forms
+    hook: Delhi government online form assistance
+    bullets: [DDA form support, Delhi Transport services, Revenue Department certificate forms]
+    documents: [Identity/address proof, Application-specific records, Active mobile/email]
+    hashtags: [DDA, DelhiTransport, RevenueDepartment]
+
+  - category: School Admission
+    title: School & Nursery Admission Forms
+    hook: Admission form filling support for parents
+    bullets: [School admission forms, Nursery/EWS admission forms, Document scan and upload]
+    documents: [Child and parent documents, Address proof, Category/income record if applicable]
+    hashtags: [SchoolAdmission, NurseryAdmission, EWSAdmission]
+
+  - category: College Admission
+    title: DU & University Admission Help
+    hook: College application support from start to finish
+    bullets: [Delhi University assistance, College/university forms, Document upload and payment]
+    documents: [Academic records, Identity/category documents, Photo and signature]
+    hashtags: [DUAdmission, CollegeAdmission, UniversityAdmission]
+
+  - category: IGNOU
+    title: IGNOU Online Form Services
+    hook: IGNOU admission or exam form pending?
+    bullets: [New admission, Re-registration, Exam form assistance]
+    documents: [Academic records, Enrollment details when applicable, Photo/signature]
+    hashtags: [IGNOU, IGNOUAdmission, IGNOUExam]
+
+  - category: Entrance Exams
+    title: CUET, NEET & JEE Forms
+    hook: Entrance exam application support
+    bullets: [CUET forms, NEET application assistance, JEE and other entrance forms]
+    documents: [Academic records, Identity/category documents, Correct photo and signature]
+    hashtags: [CUET, NEET, JEE]
+
+  - category: CBSE
+    title: CBSE Private Candidate Forms
+    hook: Private candidate form assistance
+    bullets: [Online form filling, Document upload, Fee and confirmation support]
+    documents: [Previous marksheet/details, Identity proof, Photo/signature]
+    hashtags: [CBSEPrivateCandidate, CBSEForm, ExamForms]
+
+  - category: Scholarships
+    title: Scholarship Application Help
+    hook: Don't miss an eligible scholarship
+    bullets: [National Scholarship Portal forms, State/other scholarship forms, Document upload support]
+    documents: [Academic records, Income/category documents if applicable, Bank and identity details]
+    hashtags: [Scholarship, NSP, StudentSupport]
+
+  - category: Government Jobs
+    title: Government Job Form Assistance
+    hook: Applying for a government vacancy?
+    bullets: [SSC and UPSC forms, DSSSB and Railway forms, Banking and Police forms]
+    documents: [Academic records, Identity/category documents, Correct photo and signature]
+    hashtags: [GovernmentJobs, SSC, UPSC, DSSSB, RailwayJobs]
+
+  - category: Exam Support
+    title: Admit Card & Result Download
+    hook: Need an admit card or result printout?
+    bullets: [Admit card download, Result download, Clean print and PDF assistance]
+    documents: [Registration/roll number, Date of birth/login details, Exam name]
+    hashtags: [AdmitCard, ExamResult, StudentServices]
+
+  - category: Career Services
+    title: Resume, CV & Cover Letter
+    hook: Make your job application look professional
+    bullets: [Resume and CV preparation, Biodata formatting, Custom cover letters]
+    documents: [Education/work details, Skills and contact details, Target role if available]
+    hashtags: [ResumeWriting, CVDesign, JobSearch]
+
+  - category: Employment
+    title: Employment Exchange Registration
+    hook: Employment registration assistance
+    bullets: [New registration, Profile update support, Document upload and print]
+    documents: [Identity/address proof, Academic records, Active mobile/email]
+    hashtags: [EmploymentExchange, JobSeeker, OnlineRegistration]
+
+  - category: Business Registration
+    title: Udyam / MSME Registration
+    hook: Starting or formalising a small business?
+    bullets: [Udyam registration assistance, Detail verification, Certificate download]
+    documents: [Aadhaar/PAN details, Business information, Bank/contact details]
+    hashtags: [UdyamRegistration, MSME, SmallBusinessIndia]
+
+  - category: Business Compliance
+    title: GST & FSSAI Assistance
+    hook: Business registration and filing support
+    bullets: [GST registration assistance, GST return support, FSSAI registration/licence guidance]
+    documents: [Promoter/business KYC, Address/business records, Bank and activity details]
+    hashtags: [GSTRegistration, GSTReturn, FSSAI]
+
+  - category: Banking
+    title: Bank Account Form Assistance
+    hook: Need help preparing a bank form?
+    bullets: [Account-opening form help, KYC document preparation, Scan/print assistance]
+    documents: [Identity proof, Address proof, PAN/photo as required]
+    hashtags: [BankAccount, KYC, FormFilling]
+
+  - category: Travel Booking
+    title: Train, Bus, Flight & Hotel Booking
+    hook: Travel booking assistance in one place
+    bullets: [Railway/IRCTC assistance, Bus and flight booking, Hotel booking support]
+    documents: [Passenger details, Travel dates, Valid identity details]
+    hashtags: [IRCTC, TrainBooking, FlightBooking, HotelBooking]
+
+  - category: Travel Documents
+    title: Visa Form & Travel Insurance Help
+    hook: Preparing for international travel?
+    bullets: [Visa application form assistance, Appointment/document guidance, Travel insurance assistance]
+    documents: [Passport details, Travel plan, Destination-specific supporting records]
+    hashtags: [VisaApplication, TravelInsurance, TravelDocuments]
+
+  - category: Print Shop
+    title: Print, Xerox, Scan & Lamination
+    hook: Everyday document work done neatly
+    bullets: [Black-and-white and colour print, Photocopy and scanning/email, Lamination service]
+    documents: [File/document to process, Correct print size, Delivery/contact preference]
+    hashtags: [PrintingServices, Xerox, Scanning, Lamination]
+
+  - category: Photo Services
+    title: Passport Photo & Background Removal
+    hook: Need a form-ready photograph?
+    bullets: [Passport-size photo, Background removal, Resize to portal requirements]
+    documents: [Clear recent photograph, Required size if known, Target form/portal]
+    hashtags: [PassportPhoto, BackgroundRemoval, PhotoResize]
+
+  - category: Document Services
+    title: PDF, Word, Excel & PowerPoint Work
+    hook: Digital document work made easy
+    bullets: [PDF merge/split/compress, Hindi and English typing, Word, Excel and PowerPoint work]
+    documents: [Source files, Clear instructions, Desired output format]
+    hashtags: [PDFServices, DocumentTyping, MicrosoftOffice]
+
+  - category: Online Assistance
+    title: Online Form, Email & Submission Help
+    hook: Stuck with an online form or upload?
+    bullets: [Online form filling, Email creation and submission, Online payment assistance]
+    documents: [Form details, Required documents, Active mobile for OTP]
+    hashtags: [OnlineForm, EmailHelp, DigitalServices]
+
+  - category: WhatsApp Print
+    title: WhatsApp Printout & Letter Typing
+    hook: Send the file and get a clean print
+    bullets: [WhatsApp document printout, Application/letter typing, Resume and biodata formatting]
+    documents: [Readable source file/photo, Correct names and details, Print/output preference]
+    hashtags: [WhatsAppPrint, LetterTyping, CyberCafe]
