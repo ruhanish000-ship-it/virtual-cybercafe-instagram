@@ -1,0 +1,7 @@
+beautifulsoup4==4.13.4
+cryptography==45.0.6
+numpy==2.2.6
+Pillow==11.3.0
+PyYAML==6.0.2
+requests==2.32.4
+

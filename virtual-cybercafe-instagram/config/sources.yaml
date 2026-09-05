@@ -1,0 +1,45 @@
+# Only official domains are allowed. On its first successful run the monitor
+# creates a baseline; it will not post old notices as new alerts.
+sources:
+  - name: SSC
+    url: https://ssc.gov.in/home/noticeboard
+    allowed_hosts: [ssc.gov.in, www.ssc.gov.in]
+  - name: UPSC
+    url: https://www.upsc.gov.in/whats-new
+    allowed_hosts: [upsc.gov.in, www.upsc.gov.in, upsconline.nic.in, www.upsconline.nic.in]
+  - name: DSSSB Delhi
+    url: https://dsssb.delhi.gov.in/notifications
+    allowed_hosts: [dsssb.delhi.gov.in]
+  - name: NTA Exams
+    url: https://www.nta.ac.in/
+    allowed_hosts: [nta.ac.in, www.nta.ac.in, exams.nta.ac.in]
+  - name: Railway Recruitment Board Chandigarh
+    url: https://www.rrbcdg.gov.in/
+    allowed_hosts: [rrbcdg.gov.in, www.rrbcdg.gov.in]
+
+include_keywords:
+  - application
+  - apply online
+  - registration
+  - admission
+  - recruitment
+  - vacancy
+  - employment notice
+  - examination notice
+  - notification
+  - admit card
+  - correction window
+  - scholarship
+  - e-admit card
+  - परीक्षा
+  - आवेदन
+  - भर्ती
+  - प्रवेश पत्र
+
+exclude_keywords:
+  - tender
+  - gem bid
+  - debarment
+  - court order
+  - interview result
+
